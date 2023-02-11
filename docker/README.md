@@ -1,0 +1,1 @@
+评论调用`Artalk`评论系统，使用`Docker`搭建。数据库同样适用博客的数据库，更多关于`Artalk`的信息请查看[Artalk文档](https://artalk.js.org/)

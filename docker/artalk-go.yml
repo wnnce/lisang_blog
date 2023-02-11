@@ -1,0 +1,99 @@
+# Listen host
+host: "0.0.0.0"
+
+# Listen port
+port: 23366
+
+# App Key (for generation of JWT)
+app_key: "lisang_blog_comment"
+
+# Language (follow Unicode BCP 47)
+# -- see https://www.techonthenet.com/js/language_tags.php --
+locale: "zh-CN"
+
+# Timezone (follow IANA Time Zone Database)
+# -- see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones --
+timezone: "Asia/Shanghai"
+
+# Default site name (create when app is first launched)
+# 站点名称
+site_default: ""
+
+# Login timeout (in seconds)
+login_timeout: 259200
+
+# 管理员配置
+admin_users:
+  - name: ""
+    email: ""
+    password: ""
+    badge_name: "管理员"
+    badge_color: "#FF6C00"
+
+# Database
+db:
+  # Database type ["sqlite", "mysql", "pgsql", "mssql"]
+  type: "pgsql"
+  # Table prefix (e.g. "atk_")
+  table_prefix: "artalk_"
+  # -- The following is not necessary for SQLite --
+  # Database name
+  name: "BLOG"
+  # Host address
+  host: ""
+  # Host port
+  port: 
+  # Database user
+  user: "l"
+  # Database password
+  password: ""
+  # Database charset
+  charset: "utf8mb4"
+
+# Logging
+log:
+  # Enable logging
+  enabled: true
+  # Log file path
+  filename: "./data/artalk.log"
+
+# Cache
+cache:
+  # Cache type ["redis", "memcache", "builtin"]
+  type: "redis"
+  # Cache expiration time (in minutes)
+  expires: 30
+  # Cache warm up (warm up cache when program starts)
+  warm_up: false
+  # -- The following is not necessary for `builtin` cache --
+  # Cache server address (e.g. "localhost:6379")
+  server: ""
+  # Redis config
+  redis:
+    # Connection type ["tcp", "unix"]
+    network: "tcp"
+    # Redis username
+    username: ""
+    # Redis password
+    password: ""
+    # Redis database number (e.g. 0)
+    db: 1
+
+# Trusted domains
+# -- e.g. ["https://artalk.example.com:23366"] add url of your site her --
+trusted_domains:
+  - "*"
+
+# SSL
+ssl:
+  # Enable SSL
+  enabled: false
+  # Certificate file path
+  # (e.g. "/etc/letsencrypt/live/example.com/fullchain.pem")
+  cert_path: ""
+  # Key file path
+  # (e.g. "/etc/letsencrypt/live/example.com/privkey.pem")
+  key_path: ""
+img_upload:
+  enabled: 0
+  max_size: 1
