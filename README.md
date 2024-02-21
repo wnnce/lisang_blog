@@ -8,7 +8,7 @@
 
 后端代码仓库[Github](https://github.com/wnnce/lisang_blog_server)
 
-> 使用Go和Nextjs重构中，请切换dev分支
+> 使用Go和Nextjs重构中，本仓库和相关仓库归档
 
 ## 项目介绍
 
